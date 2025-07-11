@@ -4,11 +4,13 @@ class Solution {
         int k=0;
         for(int i =0;i<nums1.length;i++)
         {
-            n[k++]=nums1[i];
+            n[k]=nums1[i];
+            k++;
         }
         for(int i =0;i<nums2.length;i++)
         {
-            n[k++]=nums2[i];
+            n[k]=nums2[i];
+            k++;
         }
         Arrays.sort(n);
         int len= n.length;
